@@ -1,13 +1,6 @@
 #include "stdio.h"
 #include "stdlib.h"
-
-
-typedef struct node {
-    int val;
-    int fb;
-    struct node *dir;
-    struct node *esq;
-} Node;
+#include "avl.h"
 
 Node *rotacaoEsquerda(Node *n) {
     printf("rotacao esquerda\n");
@@ -206,8 +199,6 @@ Node *buscar(Node *cabeca, int val) {
     } else {
         return cabeca;
     }
-
-    return NULL;
 }
 
 int main() {

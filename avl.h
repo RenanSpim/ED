@@ -1,5 +1,7 @@
+#define valor int
+
 typedef struct node {
-    int val;
+    valor val;
     int fb;
     struct node *dir;
     struct node *esq;
@@ -13,8 +15,8 @@ Node *rotacaoDireitaEsquerda(Node *n);
 int calcFb(Node *n);
 Node *balancear(Node *cabeca);
 
-Node *buscar(Node *cabeca, int val);
-Node *inserir(Node *cabeca, int val);
-Node *remover(Node *cabeca, int val);
+Node *buscar(Node *cabeca, valor val);
+Node *inserir(Node *cabeca, valor val);
+Node *remover(Node *cabeca, valor val);
 
 void printAvlOrd(Node *cabeca);

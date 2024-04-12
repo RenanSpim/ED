@@ -87,7 +87,7 @@ Node *balancear(Node *cabeca) {
     return cabeca;
 }
 
-Node *inserir(Node *cabeca, int val) {
+Node *inserir(Node *cabeca, valor val) {
     if (cabeca == NULL) {
         cabeca = malloc(sizeof(Node));
         cabeca->val = val;
@@ -104,7 +104,7 @@ Node *inserir(Node *cabeca, int val) {
     return cabeca;
 }
 
-Node *remover(Node *cabeca, int val) {
+Node *remover(Node *cabeca, valor val) {
     Node *aux, *prox, *atual = cabeca;
     
     if (cabeca == NULL) return NULL;
@@ -189,7 +189,7 @@ void printAvlOrd(Node *cabeca) {
     printAvlOrd(cabeca->dir);
 }
 
-Node *buscar(Node *cabeca, int val) {
+Node *buscar(Node *cabeca, valor val) {
     if (cabeca == NULL) return NULL;
     
     if (val > cabeca->val) {
